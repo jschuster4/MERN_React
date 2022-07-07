@@ -7,7 +7,7 @@ class PersonCard extends Component{
         const{ firstName, lastName, age, hairColor } = this.props;
         return(
             <div>
-                <h1> My name is { firstName} { lastName}</h1>
+                <h1> Name: { firstName} { lastName}</h1>
                 <h1> Hair Color: { hairColor}</h1>
                 <h1> Age: { age}</h1>
             </div>
