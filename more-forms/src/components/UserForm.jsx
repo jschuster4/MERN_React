@@ -12,11 +12,13 @@ const UserForm = (props) => {
     const [emailError, setEmailError] = useState("");
     const [passwordError, setPasswordError] = useState("");
     const [confirmPasswordError, setConfirmPasswordError] = useState("");
+    // const [canRender, setCanRender] = useState(false);
 
 
     
     const createUser = (e) => {
         e.preventDefault();
+        // setCanRender = (true);
         const newUser = { firstName, lastName, email, password };
         setFirstName("");
         setLastName("");
@@ -132,7 +134,7 @@ const UserForm = (props) => {
                     }
                 </div>
                 <div>
-                    <label>Confrim Password: </label>
+                    <label>Confirm Password: </label>
                     <input type="text" onChange={handleConfirmPassword} value={confirmPassword}/>
                     {
                         confirmPasswordError ? <p style={{color: 'red'}}> {confirmPasswordError} </p> : ""
